@@ -1,0 +1,35 @@
+<h1>Listing gists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Snippet</th>
+      <th>Lang</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+	<th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gists.each do |gist| %>
+      <tr>
+	<td width="4%"> </td>
+        <td width="40%"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
+        <td width="10%" align="center"><%= gist.lang %></td>
+        <td width="15%" align="center"><%= gist.description %></td>
+        <td width="6%" align="center"><%= link_to "<button>Show</button>".html_safe, gist %></td>
+        <td width="6%" align="center"><%= link_to "<button>Edit</button>".html_safe, edit_gist_path(gist) %></td>
+        <td width="6%" align="center"><%= link_to "<button>Delete</button>".html_safe, gist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td width="3%"></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gist', new_gist_path %>
