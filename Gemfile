@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
+
 gem 'rails', '4.0.3'
 
 group :development do

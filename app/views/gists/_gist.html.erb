@@ -1,0 +1,38 @@
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Snippet</th>
+      <th>Lang</th>
+      <th>Description</th>
+      <th></th>
+	<th></th>
+    </tr>
+  </thead>
+      <tr>
+	<td width="4%"> </td>
+        <td width="40%"><%= raw Pygments.highlight(gist.snippet, lexer: gist.lang) %></td>
+        <td width="10%" align="center"><%= gist.lang %></td>
+        <td width="15%" align="center"><%= gist.description %></td>
+        <td width="18%" align="center">
+	<%= link_to 	"<button type=\"button\"
+			class=\"btn btn-default btn-m\">
+			<span class=\"glyphicon glyphicon-eye-open\">
+			Show</span>
+			</button>".html_safe, gist %>
+	<%= link_to 	"<button type=\"button\" 
+			class=\"btn btn-default btn-m\">
+			<span class=\"glyphicon glyphicon-cog\">
+			Edit</span>
+			</button>".html_safe, edit_gist_path(gist) %>
+
+	<%= link_to "	<button type=\"button\"
+			class=\"btn btn-default btn-m\">
+			<span class=\"glyphicon glyphicon-remove\">
+			Delete</span>
+			</button>".html_safe, gist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td width="3%"></td>
+      </tr>
+</table>
+
+

@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :snippet %><br>
-    <%= f.text_area :snippet %>
+    <%= f.text_area :snippet, :size => "80x10" %>
   </div>
   <div class="field">
     <%= f.label :lang %><br>
@@ -24,6 +24,6 @@
     <%= f.text_field :description %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :Gotowe, style:"width: 100px;"  %>
   </div>
 <% end %>
