@@ -16,5 +16,16 @@
   <%= @gist.description %>
 </p>
 
-<%= link_to 'Edit', edit_gist_path(@gist) %> |
-<%= link_to 'Back', gists_path %>
+
+<%= link_to "	<button type=\"button\" 
+		class=\"btn btn-default btn-xxl\">
+		<span class=\"glyphicon glyphicon-home\">
+		Strona Główna</span>
+		</button>".html_safe, gists_path %>
+
+
+<%= link_to "	<button type=\"button\" 
+		class=\"btn btn-default btn-xxl\">
+		<span class=\"glyphicon glyphicon-cog\">
+		Edytuj Gist</span>
+		</button>".html_safe, edit_gist_path(@gist) %>
