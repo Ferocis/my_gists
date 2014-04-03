@@ -3,8 +3,12 @@
 Aplikacja na zaliczenie laboratoriów z Architektury Serwisów Komputerowych.
 
 == FUNKCJONALNOŚĆ
+- Dodawanie Gistów
+- Przeglądanie dodanych Gistów
+- Edycja i usuwanie Gistów
 - Kolorowanie kodu na stronie głównej jak i podczas przeglądu
 - Paginacja
+
 
 
 ==UŻYTE GEMY
