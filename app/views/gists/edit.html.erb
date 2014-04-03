@@ -1,12 +1,21 @@
-<h1>Editing gist</h1>
-
-
 <table>
 	<tr>
-		<td width="15%"></td>
-		<td><%= render 'form' %></td>
+		<td width="5%"></td>
+		<td width="50%"><%= render 'form' %></td>
 	</tr>
 </table>
 
-<%= link_to 'Show', @gist %> |
-<%= link_to 'Back', gists_path %>
+
+<%= link_to "	<button type=\"button\" 
+		class=\"btn btn-default btn-xxl\">
+		<span class=\"glyphicon glyphicon-home\">
+		Strona Główna</span>
+		</button>".html_safe, gists_path %>
+
+
+<%= link_to "	<button type=\"button\" 
+		class=\"btn btn-default btn-xxl\">
+		<span class=\"glyphicon glyphicon-search\">
+		Pokaż Gist</span>
+		</button>".html_safe, @gist %>
+

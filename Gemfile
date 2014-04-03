@@ -7,6 +7,8 @@ gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
+gem 'pg', '0.15.1'
+
 
 gem 'rails', '4.0.3'
 
@@ -28,6 +30,5 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end

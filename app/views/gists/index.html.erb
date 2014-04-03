@@ -1,12 +1,20 @@
 <%- model_class = Gist -%>
 
+<hr>
 
+<center>
+<h1> Lista Gistów </h1>
+
+<hr>
 <%= link_to "	<button type=\"button\" 
-		class=\"btn btn-default btn-xl\">
+		class=\"btn btn-default btn-xxl\">
 		<span class=\"glyphicon glyphicon-plus\">
 		New Gist</span>
 		</button>".html_safe, new_gist_path %>
+<hr>
 
+
+</center>
 
 <div id="infinite-scrolling" style="visibility: hidden;">
 	<%= will_paginate %>
@@ -15,8 +23,6 @@
 <div id="my-gists">
 	<div class="jumbotrom">
 		<div class="container">
-			<h1>Listing gists</h1>
-
 			<div class="row">
 				<%= render @gists %>
 			</div>

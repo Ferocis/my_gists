@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-for i in 0..100
+for i in 0..25
   Gist.create(
       snippet: 'public class HelloWorld {
 
@@ -17,6 +17,6 @@ for i in 0..100
 
 }',
       lang: "java",
-      description: "przykladzik"
+      description: "przykladzik#{i}"
   )
 end
