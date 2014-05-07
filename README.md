@@ -8,6 +8,7 @@ Aplikacja na zaliczenie laboratoriów z Architektury Serwisów Komputerowych.
 - Edycja i usuwanie Gistów
 - Kolorowanie kodu na stronie głównej jak i podczas przeglądu
 - Paginacja
+- Wyszukiwanie
 
 
 
