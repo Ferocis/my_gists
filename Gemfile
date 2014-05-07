@@ -6,14 +6,11 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
-
 gem 'pg', '0.15.1'
-
-
 gem 'rails', '4.0.3'
 
+
 group :development do
-  gem 'sqlite3', '1.3.8'
   gem 'quiet_assets'
 end
 
@@ -27,6 +24,7 @@ gem 'redcarpet', '3.1.1'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'sqlite3', group: [:development, :test]
 end
 
 group :production do
