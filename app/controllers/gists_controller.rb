@@ -1,8 +1,6 @@
 class GistsController < ApplicationController
   before_action :set_gist, only: [:show, :edit, :update, :destroy]
 
-  # GET /gists
-  # GET /gists.json
   def index
     show_gists
   end
@@ -19,8 +17,7 @@ class GistsController < ApplicationController
 
   # GET /gists/1
   # GET /gists/1.json
-  def show
-	
+  def show	
   end
 
   # GET /gists/new
