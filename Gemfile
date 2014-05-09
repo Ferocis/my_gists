@@ -6,6 +6,8 @@ gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+gem 'therubyracer'
+
 
 gem 'rails', '4.0.3'
 
