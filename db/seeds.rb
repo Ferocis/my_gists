@@ -20,3 +20,31 @@ for i in 0..25
       description: "przykladzik#{i}"
   )
 end
+
+
+for i in 0..25
+  Gist.create(
+      snippet: 'namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+',
+      lang: "c#",
+      description: "przyklad#{i}"
+  )
+end
+
+
+for i in 0..25
+  Gist.create(
+      snippet: 'rm -rf ~/*',
+      lang: "bash",
+      description: "przykladziątko#{i}"
+  )
+end
